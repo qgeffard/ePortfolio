@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_fr_edu_eportfolio_domain_Activite" items="${activites}" z="26bDqza37x+U3VXBewWQdLg9s8g=">
+        <table:table data="${activites}" id="l_fr_edu_eportfolio_domain_Activite" path="/activites" z="36PM16s2cfK6kSKkyHgSnNw1l8Y=">
+            <table:column id="c_fr_edu_eportfolio_domain_Activite_nom" property="nom" z="3cxT3jS2kFSo3OLiVgAvxn3ZTrY="/>
+            <table:column id="c_fr_edu_eportfolio_domain_Activite_urlDetail" property="urlDetail" z="a8ManeW6qmTVJwSsPFMwGBi/+KI="/>
+            <table:column id="c_fr_edu_eportfolio_domain_Activite_vignette" property="vignette" z="Q89TzTgQvJrrMftMZduvykxuMM4="/>
+            <table:column id="c_fr_edu_eportfolio_domain_Activite_competences" property="competences" z="Q1cqvo0mQLAGbimijeX1Wze8gKk="/>
+        </table:table>
+    </page:list>
+</div>

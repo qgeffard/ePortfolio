@@ -1,0 +1,18 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-02-20 15:38:42
+project --topLevelPackage fr.edu.ePortfolio
+jpa setup --provider HIBERNATE --database MYSQL --databaseName ePortfolio
+entity jpa --class ~.domain.Competence --testAutomatically
+ field string --fieldName categori --notNull --sizeMin 1 --sizeMax 30
+ field string --fieldName reference --notNull --sizeMin 1 --sizeMax 30
+ field string --fieldName nom --notNull --sizeMin 1 --sizeMax 30
+entity jpa --class ~.domain.Activite --testAutomatically
+ field string --fieldName nom --notNull --sizeMin 1 --sizeMax 30
+ field string --fieldName urlDetail --notNull --sizeMin 1 --sizeMax 30
+ field string --fieldName vignette --notNull --sizeMin 1 --sizeMax 30
+ field set --fieldName competences --type ~.domain.Competence
+web mvc setup
+web mvc all --package ~.web
+// script --file /home/doot/Bureau/ScriptRoo-ePortFolio.roo
+quit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-02-20 15:39:15
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-02-20 15:41:00
