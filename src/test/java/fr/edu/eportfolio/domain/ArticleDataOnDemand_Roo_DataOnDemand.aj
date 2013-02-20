@@ -36,8 +36,8 @@ privileged aspect ArticleDataOnDemand_Roo_DataOnDemand {
     
     public void ArticleDataOnDemand.setNom(Article obj, int index) {
         String nom = "nom_" + index;
-        if (nom.length() > 30) {
-            nom = nom.substring(0, 30);
+        if (nom.length() > 200) {
+            nom = nom.substring(0, 200);
         }
         obj.setNom(nom);
     }

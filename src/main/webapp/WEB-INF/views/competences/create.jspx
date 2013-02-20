@@ -3,9 +3,9 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_fr_edu_eportfolio_domain_Competence" modelAttribute="competence" path="/competences" render="${empty dependencies}" z="n/qYcL0RegnlvBrrK19rDvZ52Sg=">
-        <field:input field="categori" id="c_fr_edu_eportfolio_domain_Competence_categori" max="30" min="1" required="true" z="NUfdkadQ1Eoe8oLpltNX1WNhVn8="/>
         <field:input field="reference" id="c_fr_edu_eportfolio_domain_Competence_reference" max="30" min="1" required="true" z="DG4rc7V+3SZQYxOYMhe7dhD2F6k="/>
         <field:input field="nom" id="c_fr_edu_eportfolio_domain_Competence_nom" max="30" min="1" required="true" z="pOoBfYCmQRvuIDunHf8CG1iBIzA="/>
+        <field:input field="categorie" id="c_fr_edu_eportfolio_domain_Competence_categorie" max="30" min="1" required="true" z="f4pMkfjkuE3ro5YUapCnfvu5ISg="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_fr_edu_eportfolio_domain_Competence" render="${not empty dependencies}" z="q0+jc0VAPfhkz/+5a3Cvt9KcwDA="/>
 </div>

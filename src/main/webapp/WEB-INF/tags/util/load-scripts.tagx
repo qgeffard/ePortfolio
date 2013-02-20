@@ -12,7 +12,18 @@
   <link rel="stylesheet" type="text/css" href="${tundra_url}" />
   <link rel="stylesheet" type="text/css" media="screen" href="${roo_css_url}" />
   <link rel="SHORTCUT ICON" href="${favicon}" />
-
+ 	
+ 	<!-- MENU 
+  <spring:url value="/resources/styles/menu/menu.css" var="menuCss_url" />
+  <spring:url value="/resources/styles/menu/menuie6.css" var="menuieCss_url" />
+  <spring:url value="/resources/styles/menu/jquery-1.7.1.min.js" var="jquery_url" />
+  <link rel="stylesheet" type="text/css" href="${menuCss_url}"  />
+  <link rel="stylesheet" type="text/css" href="${menuieCss_url}"  />
+  
+  <script type="text/javascript" src="${jquery_url}">/* required for FF3 and Opera */ </script> -->
+	
+	
+	
   <!-- Get the user local from the page context (it was set by Spring MVC's locale resolver) -->
   <c:set var="userLocale">
     <c:set var="plocale">${pageContext.response.locale}</c:set>

@@ -25,3 +25,4 @@ web mvc all --package ~.web
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-02-20 19:53:11
 focus --class ~.domain.Activite
 field set --fieldName articles --type ~.domain.Article
+web mvc controller --class ~web.Presentation --preferredMapping /presentation

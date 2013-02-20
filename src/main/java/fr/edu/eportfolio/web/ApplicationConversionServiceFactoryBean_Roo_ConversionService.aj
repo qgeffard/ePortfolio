@@ -66,7 +66,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Competence, String> ApplicationConversionServiceFactoryBean.getCompetenceToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<fr.edu.eportfolio.domain.Competence, java.lang.String>() {
             public String convert(Competence competence) {
-                return new StringBuilder().append(competence.getCategori()).append(' ').append(competence.getReference()).append(' ').append(competence.getNom()).toString();
+                return new StringBuilder().append(competence.getCategorie()).append(' ').append(competence.getReference()).append(' ').append(competence.getNom()).toString();
             }
         };
     }

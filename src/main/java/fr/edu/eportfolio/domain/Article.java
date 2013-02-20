@@ -12,7 +12,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 public class Article {
 
     @NotNull
-    @Size(min = 1, max = 30)
+    @Size(min = 1, max = 200)
     private String nom;
 
     @NotNull

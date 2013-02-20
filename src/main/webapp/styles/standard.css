@@ -7,7 +7,9 @@ body,div,td {
 }
 
 body {
-	background-color: #fff;
+	background-image:url('../images/background_arc.jpg');
+	background-repeat:no-repeat;
+	background-color: #000;
 	text-align: center;
 }
 
@@ -84,6 +86,8 @@ body {
 }
 
 #footer {
+	border-radius:5px;
+	padding:10px;
 	background:#fff;
 	border:none;
 	margin-top:15px;

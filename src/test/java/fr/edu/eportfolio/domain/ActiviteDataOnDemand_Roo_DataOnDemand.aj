@@ -32,24 +32,24 @@ privileged aspect ActiviteDataOnDemand_Roo_DataOnDemand {
     
     public void ActiviteDataOnDemand.setNom(Activite obj, int index) {
         String nom = "nom_" + index;
-        if (nom.length() > 30) {
-            nom = nom.substring(0, 30);
+        if (nom.length() > 200) {
+            nom = nom.substring(0, 200);
         }
         obj.setNom(nom);
     }
     
     public void ActiviteDataOnDemand.setUrlDetail(Activite obj, int index) {
         String urlDetail = "urlDetail_" + index;
-        if (urlDetail.length() > 30) {
-            urlDetail = urlDetail.substring(0, 30);
+        if (urlDetail.length() > 200) {
+            urlDetail = urlDetail.substring(0, 200);
         }
         obj.setUrlDetail(urlDetail);
     }
     
     public void ActiviteDataOnDemand.setVignette(Activite obj, int index) {
         String vignette = "vignette_" + index;
-        if (vignette.length() > 30) {
-            vignette = vignette.substring(0, 30);
+        if (vignette.length() > 200) {
+            vignette = vignette.substring(0, 200);
         }
         obj.setVignette(vignette);
     }

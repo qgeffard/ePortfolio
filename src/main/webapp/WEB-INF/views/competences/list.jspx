@@ -4,9 +4,9 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_fr_edu_eportfolio_domain_Competence" items="${competences}" z="KaOEMZxLA2itPLa5zML9bxpxMp4=">
         <table:table data="${competences}" id="l_fr_edu_eportfolio_domain_Competence" path="/competences" z="INm9HC17MiOIP19QO2jHOpnS8WM=">
-            <table:column id="c_fr_edu_eportfolio_domain_Competence_categori" property="categori" z="ZfkOg/PxYqsGbM7GCbFMiGWFen4="/>
             <table:column id="c_fr_edu_eportfolio_domain_Competence_reference" property="reference" z="VPpPI8nKxCtYELVJ2dsH/55Uggg="/>
             <table:column id="c_fr_edu_eportfolio_domain_Competence_nom" property="nom" z="ljSU+GMjqnJhXf5sGXdJi3yWV3o="/>
+            <table:column id="c_fr_edu_eportfolio_domain_Competence_categorie" property="categorie" z="RzXm/0QydHTuqFPIJN+Luu93v1k="/>
         </table:table>
     </page:list>
 </div>

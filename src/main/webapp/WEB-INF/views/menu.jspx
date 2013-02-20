@@ -15,5 +15,8 @@
             <menu:item id="i_article_new" messageCode="global_menu_new" url="/articles?form" z="KAIw4owYUar1rhsKMIgMqdaUYKQ="/>
             <menu:item id="i_article_list" messageCode="global_menu_list" url="/articles?page=1&amp;size=${empty param.size ? 10 : param.size}" z="s9OgZlm3YfBTpWNrQfYLkfKCmC0="/>
         </menu:category>
+        <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
+            <menu:item id="i_controller__presentationindex_id" messageCode="global_generic" url="/presentation/index" z="gvq9XhGN8cX5vlUPm4EVseTjX/s="/>
+        </menu:category>
     </menu:menu>
 </div>

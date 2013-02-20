@@ -3,8 +3,8 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_fr_edu_eportfolio_domain_Competence" object="${competence}" path="/competences" z="RrwdyJEVwFFvXopt0NmuV4aXinI=">
-        <field:display field="categori" id="s_fr_edu_eportfolio_domain_Competence_categori" object="${competence}" z="jNAV0Ccj5Yqfy0RWb4yTfvDIv6g="/>
         <field:display field="reference" id="s_fr_edu_eportfolio_domain_Competence_reference" object="${competence}" z="WvVChE6lXT9RiJaowX5Bea8q9KQ="/>
         <field:display field="nom" id="s_fr_edu_eportfolio_domain_Competence_nom" object="${competence}" z="/Ctshg85mnqK2y82Iwf5l9Pu8DU="/>
+        <field:display field="categorie" id="s_fr_edu_eportfolio_domain_Competence_categorie" object="${competence}" z="Z0iNsUdEUgXPcZ5A1v+lkp+PzuI="/>
     </page:show>
 </div>

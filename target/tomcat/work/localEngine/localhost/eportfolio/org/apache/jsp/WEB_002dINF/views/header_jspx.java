@@ -94,9 +94,9 @@ static {
     org.springframework.web.servlet.tags.UrlTag _jspx_th_spring_005furl_005f0 = (org.springframework.web.servlet.tags.UrlTag) _005fjspx_005ftagPool_005fspring_005furl_0026_005fvar_005fvalue_005fnobody.get(org.springframework.web.servlet.tags.UrlTag.class);
     _jspx_th_spring_005furl_005f0.setPageContext(_jspx_page_context);
     _jspx_th_spring_005furl_005f0.setParent(null);
-    // /WEB-INF/views/header.jspx(5,75) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_spring_005furl_005f0.setValue("/resources/images/banner-graphic.png");
-    // /WEB-INF/views/header.jspx(5,75) name = var type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/views/header.jspx(5,68) name = value type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_spring_005furl_005f0.setValue("/resources/images/essai11.png");
+    // /WEB-INF/views/header.jspx(5,68) name = var type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_spring_005furl_005f0.setVar("banner");
     int[] _jspx_push_body_count_spring_005furl_005f0 = new int[] { 0 };
     try {

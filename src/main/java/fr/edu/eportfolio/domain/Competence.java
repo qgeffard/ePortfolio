@@ -12,14 +12,14 @@ import org.springframework.roo.addon.tostring.RooToString;
 public class Competence {
 
     @NotNull
-    @Size(min = 1, max = 30)
-    private String categori;
+    @Size(min = 1, max = 200)
+    private String categorie;
 
     @NotNull
-    @Size(min = 1, max = 30)
+    @Size(min = 1, max = 200)
     private String reference;
 
     @NotNull
-    @Size(min = 1, max = 30)
+    @Size(min = 1, max = 200)
     private String nom;
 }

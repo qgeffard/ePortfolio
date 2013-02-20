@@ -7,12 +7,12 @@ import fr.edu.eportfolio.domain.Competence;
 
 privileged aspect Competence_Roo_JavaBean {
     
-    public String Competence.getCategori() {
-        return this.categori;
+    public String Competence.getCategorie() {
+        return this.categorie;
     }
     
-    public void Competence.setCategori(String categori) {
-        this.categori = categori;
+    public void Competence.setCategorie(String categorie) {
+        this.categorie = categorie;
     }
     
     public String Competence.getReference() {

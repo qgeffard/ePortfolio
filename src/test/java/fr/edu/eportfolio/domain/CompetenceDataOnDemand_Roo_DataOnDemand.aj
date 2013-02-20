@@ -24,32 +24,32 @@ privileged aspect CompetenceDataOnDemand_Roo_DataOnDemand {
     
     public Competence CompetenceDataOnDemand.getNewTransientCompetence(int index) {
         Competence obj = new Competence();
-        setCategori(obj, index);
+        setCategorie(obj, index);
         setNom(obj, index);
         setReference(obj, index);
         return obj;
     }
     
-    public void CompetenceDataOnDemand.setCategori(Competence obj, int index) {
-        String categori = "categori_" + index;
-        if (categori.length() > 30) {
-            categori = categori.substring(0, 30);
+    public void CompetenceDataOnDemand.setCategorie(Competence obj, int index) {
+        String categorie = "categorie_" + index;
+        if (categorie.length() > 200) {
+            categorie = categorie.substring(0, 200);
         }
-        obj.setCategori(categori);
+        obj.setCategorie(categorie);
     }
     
     public void CompetenceDataOnDemand.setNom(Competence obj, int index) {
         String nom = "nom_" + index;
-        if (nom.length() > 30) {
-            nom = nom.substring(0, 30);
+        if (nom.length() > 200) {
+            nom = nom.substring(0, 200);
         }
         obj.setNom(nom);
     }
     
     public void CompetenceDataOnDemand.setReference(Competence obj, int index) {
         String reference = "reference_" + index;
-        if (reference.length() > 30) {
-            reference = reference.substring(0, 30);
+        if (reference.length() > 200) {
+            reference = reference.substring(0, 200);
         }
         obj.setReference(reference);
     }

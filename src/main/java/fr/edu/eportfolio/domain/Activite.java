@@ -16,15 +16,15 @@ import org.springframework.roo.addon.tostring.RooToString;
 public class Activite {
 
     @NotNull
-    @Size(min = 1, max = 30)
+    @Size(min = 1, max = 200)
     private String nom;
 
     @NotNull
-    @Size(min = 1, max = 30)
+    @Size(min = 1, max = 200)
     private String urlDetail;
 
     @NotNull
-    @Size(min = 1, max = 30)
+    @Size(min = 1, max = 200)
     private String vignette;
 
     @ManyToMany(cascade = CascadeType.ALL)
