@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_fr_edu_eportfolio_domain_Article" modelAttribute="article" path="/articles" render="${empty dependencies}" z="imr9t6nKQmXx1tUpem6yL1onTtg=">
+        <field:input field="nom" id="c_fr_edu_eportfolio_domain_Article_nom" max="30" min="1" required="true" z="TCDjsZPv/gY3KNRAra7YjntkYNE="/>
+        <field:input field="detail" id="c_fr_edu_eportfolio_domain_Article_detail" required="true" z="XCgwAyULtd7YtHBqn5bCDU5lemU="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_fr_edu_eportfolio_domain_Article" render="${not empty dependencies}" z="/UxB7BK24uswdHYzpVW+zZ0KCQk="/>
+</div>

@@ -16,3 +16,7 @@ web mvc all --package ~.web
 quit
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-02-20 15:39:15
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-02-20 15:41:00
+entity jpa --class ~.domain.Article --testAutomatically
+field string --fieldName nom --notNull --sizeMin 1 --sizeMax 30
+field string --fieldName detail --notNull 
+web mvc all --package ~.web

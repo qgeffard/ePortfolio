@@ -4,6 +4,7 @@
 package fr.edu.eportfolio.web;
 
 import fr.edu.eportfolio.domain.Activite;
+import fr.edu.eportfolio.domain.Article;
 import fr.edu.eportfolio.domain.Competence;
 import fr.edu.eportfolio.web.ApplicationConversionServiceFactoryBean;
 import org.springframework.beans.factory.annotation.Configurable;
@@ -38,6 +39,30 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<Article, String> ApplicationConversionServiceFactoryBean.getArticleToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<fr.edu.eportfolio.domain.Article, java.lang.String>() {
+            public String convert(Article article) {
+                return new StringBuilder().append(article.getNom()).append(' ').append(article.getDetail()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Article> ApplicationConversionServiceFactoryBean.getIdToArticleConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, fr.edu.eportfolio.domain.Article>() {
+            public fr.edu.eportfolio.domain.Article convert(java.lang.Long id) {
+                return Article.findArticle(id);
+            }
+        };
+    }
+    
+    public Converter<String, Article> ApplicationConversionServiceFactoryBean.getStringToArticleConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, fr.edu.eportfolio.domain.Article>() {
+            public fr.edu.eportfolio.domain.Article convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Article.class);
+            }
+        };
+    }
+    
     public Converter<Competence, String> ApplicationConversionServiceFactoryBean.getCompetenceToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<fr.edu.eportfolio.domain.Competence, java.lang.String>() {
             public String convert(Competence competence) {
@@ -66,6 +91,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getActiviteToStringConverter());
         registry.addConverter(getIdToActiviteConverter());
         registry.addConverter(getStringToActiviteConverter());
+        registry.addConverter(getArticleToStringConverter());
+        registry.addConverter(getIdToArticleConverter());
+        registry.addConverter(getStringToArticleConverter());
         registry.addConverter(getCompetenceToStringConverter());
         registry.addConverter(getIdToCompetenceConverter());
         registry.addConverter(getStringToCompetenceConverter());

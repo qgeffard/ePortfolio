@@ -1,10 +1,14 @@
 <aspectj>
 <aspects>
-<aspect name="fr.edu.eportfolio.domain.ActiviteDataOnDemand_Roo_Configurable"/>
-<aspect name="fr.edu.eportfolio.domain.ActiviteIntegrationTest_Roo_IntegrationTest"/>
 <aspect name="fr.edu.eportfolio.domain.CompetenceIntegrationTest_Roo_Configurable"/>
-<aspect name="fr.edu.eportfolio.domain.ActiviteDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="fr.edu.eportfolio.domain.ArticleDataOnDemand_Roo_Configurable"/>
 <aspect name="fr.edu.eportfolio.domain.CompetenceIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="fr.edu.eportfolio.domain.ArticleIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="fr.edu.eportfolio.domain.ActiviteDataOnDemand_Roo_Configurable"/>
+<aspect name="fr.edu.eportfolio.domain.ArticleDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="fr.edu.eportfolio.domain.ActiviteIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="fr.edu.eportfolio.domain.ArticleIntegrationTest_Roo_Configurable"/>
+<aspect name="fr.edu.eportfolio.domain.ActiviteDataOnDemand_Roo_DataOnDemand"/>
 <aspect name="fr.edu.eportfolio.domain.ActiviteIntegrationTest_Roo_Configurable"/>
 <aspect name="fr.edu.eportfolio.domain.CompetenceDataOnDemand_Roo_Configurable"/>
 <aspect name="fr.edu.eportfolio.domain.CompetenceDataOnDemand_Roo_DataOnDemand"/>
