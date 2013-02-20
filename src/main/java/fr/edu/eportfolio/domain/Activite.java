@@ -29,4 +29,7 @@ public class Activite {
 
     @ManyToMany(cascade = CascadeType.ALL)
     private Set<Competence> competences = new HashSet<Competence>();
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    private Set<Article> articles = new HashSet<Article>();
 }

@@ -7,6 +7,7 @@
         <field:input field="urlDetail" id="c_fr_edu_eportfolio_domain_Activite_urlDetail" max="30" min="1" required="true" z="Zyy9DKfNshkjnGQfD4z/doM3EOw="/>
         <field:input field="vignette" id="c_fr_edu_eportfolio_domain_Activite_vignette" max="30" min="1" required="true" z="67K7IL8O5XAh/1zunLBWpO1Yr0o="/>
         <field:select field="competences" id="c_fr_edu_eportfolio_domain_Activite_competences" itemValue="id" items="${competences}" multiple="true" path="/competences" z="0d7jBQY5EIqUbzXeuX8SpuzsZ2o="/>
+        <field:select field="articles" id="c_fr_edu_eportfolio_domain_Activite_articles" itemValue="id" items="${articles}" multiple="true" path="/articles" z="XgEEprPlNOcgbXbu6fzumAV7/mc="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_fr_edu_eportfolio_domain_Activite" render="${not empty dependencies}" z="XfoFBGIJoS/5N6NWSQEItXOxlT0="/>
 </div>

@@ -8,6 +8,7 @@
             <table:column id="c_fr_edu_eportfolio_domain_Activite_urlDetail" property="urlDetail" z="a8ManeW6qmTVJwSsPFMwGBi/+KI="/>
             <table:column id="c_fr_edu_eportfolio_domain_Activite_vignette" property="vignette" z="Q89TzTgQvJrrMftMZduvykxuMM4="/>
             <table:column id="c_fr_edu_eportfolio_domain_Activite_competences" property="competences" z="Q1cqvo0mQLAGbimijeX1Wze8gKk="/>
+            <table:column id="c_fr_edu_eportfolio_domain_Activite_articles" property="articles" z="06vaz+hMXIqjVMcCyaMEmSrnShM="/>
         </table:table>
     </page:list>
 </div>

@@ -4,6 +4,7 @@
 package fr.edu.eportfolio.web;
 
 import fr.edu.eportfolio.domain.Activite;
+import fr.edu.eportfolio.domain.Article;
 import fr.edu.eportfolio.domain.Competence;
 import fr.edu.eportfolio.web.ActiviteController;
 import java.io.UnsupportedEncodingException;
@@ -87,6 +88,7 @@ privileged aspect ActiviteController_Roo_Controller {
     
     void ActiviteController.populateEditForm(Model uiModel, Activite activite) {
         uiModel.addAttribute("activite", activite);
+        uiModel.addAttribute("articles", Article.findAllArticles());
         uiModel.addAttribute("competences", Competence.findAllCompetences());
     }
     

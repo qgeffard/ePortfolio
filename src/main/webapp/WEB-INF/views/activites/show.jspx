@@ -7,5 +7,6 @@
         <field:display field="urlDetail" id="s_fr_edu_eportfolio_domain_Activite_urlDetail" object="${activite}" z="GVCYT81V6I3Ato9yJGXCV+hfga0="/>
         <field:display field="vignette" id="s_fr_edu_eportfolio_domain_Activite_vignette" object="${activite}" z="3cEnMhiYUm8RRdpPa5f/M5CV2vM="/>
         <field:display field="competences" id="s_fr_edu_eportfolio_domain_Activite_competences" object="${activite}" z="XY6xSC+74eQ+C1nXR7Whxl/n/Os="/>
+        <field:display field="articles" id="s_fr_edu_eportfolio_domain_Activite_articles" object="${activite}" z="n9rsxiUx1cR056gwcHnvLb5gmss="/>
     </page:show>
 </div>

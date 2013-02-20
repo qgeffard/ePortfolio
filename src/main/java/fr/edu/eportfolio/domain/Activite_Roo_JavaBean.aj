@@ -4,6 +4,7 @@
 package fr.edu.eportfolio.domain;
 
 import fr.edu.eportfolio.domain.Activite;
+import fr.edu.eportfolio.domain.Article;
 import fr.edu.eportfolio.domain.Competence;
 import java.util.Set;
 
@@ -39,6 +40,14 @@ privileged aspect Activite_Roo_JavaBean {
     
     public void Activite.setCompetences(Set<Competence> competences) {
         this.competences = competences;
+    }
+    
+    public Set<Article> Activite.getArticles() {
+        return this.articles;
+    }
+    
+    public void Activite.setArticles(Set<Article> articles) {
+        this.articles = articles;
     }
     
 }

@@ -20,3 +20,8 @@ entity jpa --class ~.domain.Article --testAutomatically
 field string --fieldName nom --notNull --sizeMin 1 --sizeMax 30
 field string --fieldName detail --notNull 
 web mvc all --package ~.web
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-02-20 17:49:22
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-02-20 19:52:30
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-02-20 19:53:11
+focus --class ~.domain.Activite
+field set --fieldName articles --type ~.domain.Article
