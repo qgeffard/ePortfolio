@@ -84,3 +84,9 @@ this.tooltip = function(){
                         .css("left",(e.pageX + yOffset) + "px");
         });                    
 };
+
+$(document).ready(function(){
+    tooltip();//active les tooltip simple
+    imagePreview();//active les tooltip image preview
+    screenshotPreview();//active les tooltip lien avec preview
+});
