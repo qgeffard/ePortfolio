@@ -3,9 +3,9 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_fr_edu_eportfolio_domain_Activite" modelAttribute="activite" path="/activites" render="${empty dependencies}" z="KOFPb9HXcLe9LSDLfTZW/jVYJBY=">
-        <field:input field="nom" id="c_fr_edu_eportfolio_domain_Activite_nom" max="30" min="1" required="true" z="ZAyk64N8dYqGztNdqLOePZ4Zx4o="/>
-        <field:input field="urlDetail" id="c_fr_edu_eportfolio_domain_Activite_urlDetail" max="30" min="1" required="true" z="Zyy9DKfNshkjnGQfD4z/doM3EOw="/>
-        <field:input field="vignette" id="c_fr_edu_eportfolio_domain_Activite_vignette" max="30" min="1" required="true" z="67K7IL8O5XAh/1zunLBWpO1Yr0o="/>
+        <field:textarea field="nom" id="c_fr_edu_eportfolio_domain_Activite_nom" required="true" z="mePJSzN+Zgu64KmRDbFq3/Gq40Y="/>
+        <field:textarea field="urlDetail" id="c_fr_edu_eportfolio_domain_Activite_urlDetail" required="true" z="mQSVcNjL/rUNkOsJzDEUVEzanEw="/>
+        <field:textarea field="vignette" id="c_fr_edu_eportfolio_domain_Activite_vignette" required="true" z="v0jvJVqMF5YmPBCX+nh8vboOMRk="/>
         <field:select field="competences" id="c_fr_edu_eportfolio_domain_Activite_competences" itemValue="id" items="${competences}" multiple="true" path="/competences" z="0d7jBQY5EIqUbzXeuX8SpuzsZ2o="/>
         <field:select field="articles" id="c_fr_edu_eportfolio_domain_Activite_articles" itemValue="id" items="${articles}" multiple="true" path="/articles" z="XgEEprPlNOcgbXbu6fzumAV7/mc="/>
     </form:create>

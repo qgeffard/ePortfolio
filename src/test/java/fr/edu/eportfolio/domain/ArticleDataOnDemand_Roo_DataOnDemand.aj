@@ -31,6 +31,9 @@ privileged aspect ArticleDataOnDemand_Roo_DataOnDemand {
     
     public void ArticleDataOnDemand.setDetail(Article obj, int index) {
         String detail = "detail_" + index;
+        if (detail.length() > 200000) {
+            detail = detail.substring(0, 200000);
+        }
         obj.setDetail(detail);
     }
     

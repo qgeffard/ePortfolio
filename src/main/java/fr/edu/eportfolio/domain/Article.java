@@ -16,5 +16,6 @@ public class Article {
     private String nom;
 
     @NotNull
+    @Size(min = 1, max = 200000)
     private String detail;
 }
