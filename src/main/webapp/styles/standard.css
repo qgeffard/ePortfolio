@@ -42,7 +42,14 @@ body {
 	overflow:hidden;
 	display:box;
 }
-
+#pageAdministration{
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:5px 5px 5px 5px;
+  padding:10px;
+  background-color:rgba(0,0,0,0.8);
+}
 #pagePrincipale{
 	border-radius:5px 5px 5px 5px;
 	padding:10px;
