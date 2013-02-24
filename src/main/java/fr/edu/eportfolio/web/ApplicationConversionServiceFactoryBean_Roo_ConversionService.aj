@@ -3,9 +3,9 @@
 
 package fr.edu.eportfolio.web;
 
-import fr.edu.eportfolio.domain.Activite;
 import fr.edu.eportfolio.domain.Article;
 import fr.edu.eportfolio.domain.Competence;
+import fr.edu.eportfolio.domain.SituationPro;
 import fr.edu.eportfolio.web.ApplicationConversionServiceFactoryBean;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.core.convert.converter.Converter;
@@ -14,30 +14,6 @@ import org.springframework.format.FormatterRegistry;
 privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService {
     
     declare @type: ApplicationConversionServiceFactoryBean: @Configurable;
-    
-    public Converter<Activite, String> ApplicationConversionServiceFactoryBean.getActiviteToStringConverter() {
-        return new org.springframework.core.convert.converter.Converter<fr.edu.eportfolio.domain.Activite, java.lang.String>() {
-            public String convert(Activite activite) {
-                return new StringBuilder().append(activite.getNom()).append(' ').append(activite.getUrlDetail()).append(' ').append(activite.getVignette()).toString();
-            }
-        };
-    }
-    
-    public Converter<Long, Activite> ApplicationConversionServiceFactoryBean.getIdToActiviteConverter() {
-        return new org.springframework.core.convert.converter.Converter<java.lang.Long, fr.edu.eportfolio.domain.Activite>() {
-            public fr.edu.eportfolio.domain.Activite convert(java.lang.Long id) {
-                return Activite.findActivite(id);
-            }
-        };
-    }
-    
-    public Converter<String, Activite> ApplicationConversionServiceFactoryBean.getStringToActiviteConverter() {
-        return new org.springframework.core.convert.converter.Converter<java.lang.String, fr.edu.eportfolio.domain.Activite>() {
-            public fr.edu.eportfolio.domain.Activite convert(String id) {
-                return getObject().convert(getObject().convert(id, Long.class), Activite.class);
-            }
-        };
-    }
     
     public Converter<Article, String> ApplicationConversionServiceFactoryBean.getArticleToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<fr.edu.eportfolio.domain.Article, java.lang.String>() {
@@ -87,16 +63,40 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<SituationPro, String> ApplicationConversionServiceFactoryBean.getSituationProToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<fr.edu.eportfolio.domain.SituationPro, java.lang.String>() {
+            public String convert(SituationPro situationPro) {
+                return new StringBuilder().append(situationPro.getNom()).append(' ').append(situationPro.getUrlDetail()).append(' ').append(situationPro.getVignette()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, SituationPro> ApplicationConversionServiceFactoryBean.getIdToSituationProConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, fr.edu.eportfolio.domain.SituationPro>() {
+            public fr.edu.eportfolio.domain.SituationPro convert(java.lang.Long id) {
+                return SituationPro.findSituationPro(id);
+            }
+        };
+    }
+    
+    public Converter<String, SituationPro> ApplicationConversionServiceFactoryBean.getStringToSituationProConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, fr.edu.eportfolio.domain.SituationPro>() {
+            public fr.edu.eportfolio.domain.SituationPro convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), SituationPro.class);
+            }
+        };
+    }
+    
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
-        registry.addConverter(getActiviteToStringConverter());
-        registry.addConverter(getIdToActiviteConverter());
-        registry.addConverter(getStringToActiviteConverter());
         registry.addConverter(getArticleToStringConverter());
         registry.addConverter(getIdToArticleConverter());
         registry.addConverter(getStringToArticleConverter());
         registry.addConverter(getCompetenceToStringConverter());
         registry.addConverter(getIdToCompetenceConverter());
         registry.addConverter(getStringToCompetenceConverter());
+        registry.addConverter(getSituationProToStringConverter());
+        registry.addConverter(getIdToSituationProConverter());
+        registry.addConverter(getStringToSituationProConverter());
     }
     
     public void ApplicationConversionServiceFactoryBean.afterPropertiesSet() {

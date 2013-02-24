@@ -4,6 +4,6 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_fr_edu_eportfolio_domain_Article" modelAttribute="article" path="/articles" versionField="Version" z="E+XCpsJtYa1LBZX7z+l+MeD8iSI=">
         <field:textarea field="nom" id="c_fr_edu_eportfolio_domain_Article_nom" required="true" z="c9fFQHSIVsgSdsD9Y3iUOxypGDg="/>
-        <field:input field="detail" id="c_fr_edu_eportfolio_domain_Article_detail" required="true" z="XCgwAyULtd7YtHBqn5bCDU5lemU="/>
+        <field:textarea field="detail" id="c_fr_edu_eportfolio_domain_Article_detail" required="true" z="lR+OuZLA5k56MkCyAbjP+kT3B34="/>
     </form:update>
 </div>

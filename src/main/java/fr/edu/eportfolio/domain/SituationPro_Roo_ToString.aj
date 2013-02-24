@@ -3,13 +3,13 @@
 
 package fr.edu.eportfolio.domain;
 
-import fr.edu.eportfolio.domain.Activite;
+import fr.edu.eportfolio.domain.SituationPro;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
-privileged aspect Activite_Roo_ToString {
+privileged aspect SituationPro_Roo_ToString {
     
-    public String Activite.toString() {
+    public String SituationPro.toString() {
         return ReflectionToStringBuilder.toString(this, ToStringStyle.SHORT_PREFIX_STYLE);
     }
     

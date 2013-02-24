@@ -3,7 +3,7 @@
 
 package fr.edu.eportfolio.domain;
 
-import fr.edu.eportfolio.domain.Activite;
+import fr.edu.eportfolio.domain.SituationPro;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,32 +11,32 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Version;
 
-privileged aspect Activite_Roo_Jpa_Entity {
+privileged aspect SituationPro_Roo_Jpa_Entity {
     
-    declare @type: Activite: @Entity;
+    declare @type: SituationPro: @Entity;
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
-    private Long Activite.id;
+    private Long SituationPro.id;
     
     @Version
     @Column(name = "version")
-    private Integer Activite.version;
+    private Integer SituationPro.version;
     
-    public Long Activite.getId() {
+    public Long SituationPro.getId() {
         return this.id;
     }
     
-    public void Activite.setId(Long id) {
+    public void SituationPro.setId(Long id) {
         this.id = id;
     }
     
-    public Integer Activite.getVersion() {
+    public Integer SituationPro.getVersion() {
         return this.version;
     }
     
-    public void Activite.setVersion(Integer version) {
+    public void SituationPro.setVersion(Integer version) {
         this.version = version;
     }
     

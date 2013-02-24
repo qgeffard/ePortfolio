@@ -3,50 +3,50 @@
 
 package fr.edu.eportfolio.domain;
 
-import fr.edu.eportfolio.domain.Activite;
 import fr.edu.eportfolio.domain.Article;
 import fr.edu.eportfolio.domain.Competence;
+import fr.edu.eportfolio.domain.SituationPro;
 import java.util.Set;
 
-privileged aspect Activite_Roo_JavaBean {
+privileged aspect SituationPro_Roo_JavaBean {
     
-    public String Activite.getNom() {
+    public String SituationPro.getNom() {
         return this.nom;
     }
     
-    public void Activite.setNom(String nom) {
+    public void SituationPro.setNom(String nom) {
         this.nom = nom;
     }
     
-    public String Activite.getUrlDetail() {
+    public String SituationPro.getUrlDetail() {
         return this.urlDetail;
     }
     
-    public void Activite.setUrlDetail(String urlDetail) {
+    public void SituationPro.setUrlDetail(String urlDetail) {
         this.urlDetail = urlDetail;
     }
     
-    public String Activite.getVignette() {
+    public String SituationPro.getVignette() {
         return this.vignette;
     }
     
-    public void Activite.setVignette(String vignette) {
+    public void SituationPro.setVignette(String vignette) {
         this.vignette = vignette;
     }
     
-    public Set<Competence> Activite.getCompetences() {
+    public Set<Competence> SituationPro.getCompetences() {
         return this.competences;
     }
     
-    public void Activite.setCompetences(Set<Competence> competences) {
+    public void SituationPro.setCompetences(Set<Competence> competences) {
         this.competences = competences;
     }
     
-    public Set<Article> Activite.getArticles() {
+    public Set<Article> SituationPro.getArticles() {
         return this.articles;
     }
     
-    public void Activite.setArticles(Set<Article> articles) {
+    public void SituationPro.setArticles(Set<Article> articles) {
         this.articles = articles;
     }
     

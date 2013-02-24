@@ -3,8 +3,8 @@
 
 package fr.edu.eportfolio.domain;
 
-import fr.edu.eportfolio.domain.Activite;
-import fr.edu.eportfolio.domain.ActiviteDataOnDemand;
+import fr.edu.eportfolio.domain.SituationPro;
+import fr.edu.eportfolio.domain.SituationProDataOnDemand;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -14,23 +14,23 @@ import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 import org.springframework.stereotype.Component;
 
-privileged aspect ActiviteDataOnDemand_Roo_DataOnDemand {
+privileged aspect SituationProDataOnDemand_Roo_DataOnDemand {
     
-    declare @type: ActiviteDataOnDemand: @Component;
+    declare @type: SituationProDataOnDemand: @Component;
     
-    private Random ActiviteDataOnDemand.rnd = new SecureRandom();
+    private Random SituationProDataOnDemand.rnd = new SecureRandom();
     
-    private List<Activite> ActiviteDataOnDemand.data;
+    private List<SituationPro> SituationProDataOnDemand.data;
     
-    public Activite ActiviteDataOnDemand.getNewTransientActivite(int index) {
-        Activite obj = new Activite();
+    public SituationPro SituationProDataOnDemand.getNewTransientSituationPro(int index) {
+        SituationPro obj = new SituationPro();
         setNom(obj, index);
         setUrlDetail(obj, index);
         setVignette(obj, index);
         return obj;
     }
     
-    public void ActiviteDataOnDemand.setNom(Activite obj, int index) {
+    public void SituationProDataOnDemand.setNom(SituationPro obj, int index) {
         String nom = "nom_" + index;
         if (nom.length() > 200) {
             nom = nom.substring(0, 200);
@@ -38,7 +38,7 @@ privileged aspect ActiviteDataOnDemand_Roo_DataOnDemand {
         obj.setNom(nom);
     }
     
-    public void ActiviteDataOnDemand.setUrlDetail(Activite obj, int index) {
+    public void SituationProDataOnDemand.setUrlDetail(SituationPro obj, int index) {
         String urlDetail = "urlDetail_" + index;
         if (urlDetail.length() > 200) {
             urlDetail = urlDetail.substring(0, 200);
@@ -46,7 +46,7 @@ privileged aspect ActiviteDataOnDemand_Roo_DataOnDemand {
         obj.setUrlDetail(urlDetail);
     }
     
-    public void ActiviteDataOnDemand.setVignette(Activite obj, int index) {
+    public void SituationProDataOnDemand.setVignette(SituationPro obj, int index) {
         String vignette = "vignette_" + index;
         if (vignette.length() > 200) {
             vignette = vignette.substring(0, 200);
@@ -54,7 +54,7 @@ privileged aspect ActiviteDataOnDemand_Roo_DataOnDemand {
         obj.setVignette(vignette);
     }
     
-    public Activite ActiviteDataOnDemand.getSpecificActivite(int index) {
+    public SituationPro SituationProDataOnDemand.getSpecificSituationPro(int index) {
         init();
         if (index < 0) {
             index = 0;
@@ -62,36 +62,36 @@ privileged aspect ActiviteDataOnDemand_Roo_DataOnDemand {
         if (index > (data.size() - 1)) {
             index = data.size() - 1;
         }
-        Activite obj = data.get(index);
+        SituationPro obj = data.get(index);
         Long id = obj.getId();
-        return Activite.findActivite(id);
+        return SituationPro.findSituationPro(id);
     }
     
-    public Activite ActiviteDataOnDemand.getRandomActivite() {
+    public SituationPro SituationProDataOnDemand.getRandomSituationPro() {
         init();
-        Activite obj = data.get(rnd.nextInt(data.size()));
+        SituationPro obj = data.get(rnd.nextInt(data.size()));
         Long id = obj.getId();
-        return Activite.findActivite(id);
+        return SituationPro.findSituationPro(id);
     }
     
-    public boolean ActiviteDataOnDemand.modifyActivite(Activite obj) {
+    public boolean SituationProDataOnDemand.modifySituationPro(SituationPro obj) {
         return false;
     }
     
-    public void ActiviteDataOnDemand.init() {
+    public void SituationProDataOnDemand.init() {
         int from = 0;
         int to = 10;
-        data = Activite.findActiviteEntries(from, to);
+        data = SituationPro.findSituationProEntries(from, to);
         if (data == null) {
-            throw new IllegalStateException("Find entries implementation for 'Activite' illegally returned null");
+            throw new IllegalStateException("Find entries implementation for 'SituationPro' illegally returned null");
         }
         if (!data.isEmpty()) {
             return;
         }
         
-        data = new ArrayList<Activite>();
+        data = new ArrayList<SituationPro>();
         for (int i = 0; i < 10; i++) {
-            Activite obj = getNewTransientActivite(i);
+            SituationPro obj = getNewTransientSituationPro(i);
             try {
                 obj.persist();
             } catch (ConstraintViolationException e) {

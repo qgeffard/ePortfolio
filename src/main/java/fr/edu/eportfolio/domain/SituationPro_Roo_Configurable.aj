@@ -3,11 +3,11 @@
 
 package fr.edu.eportfolio.domain;
 
-import fr.edu.eportfolio.domain.ActiviteDataOnDemand;
+import fr.edu.eportfolio.domain.SituationPro;
 import org.springframework.beans.factory.annotation.Configurable;
 
-privileged aspect ActiviteDataOnDemand_Roo_Configurable {
+privileged aspect SituationPro_Roo_Configurable {
     
-    declare @type: ActiviteDataOnDemand: @Configurable;
+    declare @type: SituationPro: @Configurable;
     
 }

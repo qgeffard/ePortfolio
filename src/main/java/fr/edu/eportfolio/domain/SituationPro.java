@@ -13,7 +13,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooJavaBean
 @RooToString
 @RooJpaActiveRecord
-public class Activite {
+public class SituationPro {
 
     @NotNull
     @Size(min = 1, max = 200)

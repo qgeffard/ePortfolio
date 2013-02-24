@@ -3,7 +3,7 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_fr_edu_eportfolio_domain_SituationPro" items="${situationproes}" z="nvsvZrpSICMq8vu/CQ42eajeizg=">
-        <table:table data="${situationproes}" id="l_fr_edu_eportfolio_domain_SituationPro" path="/activites" z="IurTiWbmnvYjdzfzoZaXWA3nN/c=">
+        <table:table data="${situationproes}" id="l_fr_edu_eportfolio_domain_SituationPro" path="/situationproes" z="wRHHEoe/LCcZv4uV+kB+EDLzJKs=">
             <table:column id="c_fr_edu_eportfolio_domain_SituationPro_nom" property="nom" z="anXLlH4qHLW9Leh6eZ1WAVMJhdE="/>
             <table:column id="c_fr_edu_eportfolio_domain_SituationPro_urlDetail" property="urlDetail" z="Nzl7EevS6jNHRFzDwmJWc4r+JhA="/>
             <table:column id="c_fr_edu_eportfolio_domain_SituationPro_vignette" property="vignette" z="HggrFZYWkjQ3mlmHg/f9xjqnBus="/>

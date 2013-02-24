@@ -16,15 +16,16 @@ body {
 	background-color: rgba(0,0,0,0);
 	text-align: center;
 }
-
+#banniere{
+	width:1000px; 
+	margin-right: auto;
+  margin-left: auto;
+}
 #header {
-	margin-bottom:10%;
+	margin-bottom:1%;
 }
 
 #wrapper {
-	width:1010px;
-	min-width: 1010px;
-	max-width: 1010px;
 	margin-right: auto;
 	margin-left: auto;
 
@@ -43,19 +44,9 @@ body {
 }
 
 #pagePrincipale{
-	width:98%;
-	height:80%;
 	border-radius:5px 5px 5px 5px;
 	padding:10px;
 	background-color:rgba(0,0,0,0.8);
-}
-#menu {
-	background: #eee;
-	position:relative;
-	float:left;  	
-	left:0px;
-	width:220px;
-	margin-right:15px;
 }
 
 #menu ul{
@@ -396,36 +387,138 @@ fieldset th {
 	background-color: rgba(250,250,250,1);
 }
 
+/* /* -------------------------------------------------------------------- */ 
+/* /* Preview Plugin */ */
+/* /* -------------------------------------------------------------------- */ 
 /* css pour la tooltip lien avec preview */
 #screenshot{
-        position:absolute;
-        border:1px solid #ccc;
-        background:#333;
-        padding:5px;
-        display:none;
-        color:#fff;
+  position:absolute;
+  border:1px solid #ccc;
+  background:#333;
+  padding:5px;
+  display:none;
+  color:#fff;
 }
 /* css pour la tooltip image preview */
 #preview{
-        position:absolute;
-        border:1px solid #ccc;
-        background:#333;
-        padding:5px;
-        display:none;
-        color:#fff;
+  position:absolute;
+  border:1px solid #ccc;
+  background:#333;
+  padding:5px;
+  display:none;
+  color:#fff;
 }
 /* css pour la tooltip normal */
 #tooltip{
-        position:absolute;
-        border:1px solid #333;
-        background:#f7f5d1;
-        padding:2px 5px;
-        color:#333;
-        display:none;
+  position:absolute;
+  border:1px solid #333;
+  background:#f7f5d1;
+  padding:2px 5px;
+  color:#333;
+  display:none;
 }
 
 .screenshot{
 	display:block;
-    width:100%;
-    height:50px;
+  width:100%;
+  height:50px;
 }
+
+/* /* -------------------------------------------------------------------- */ 
+/* /* Menu css  */ 
+/* /* -------------------------------------------------------------------- */ 
+
+#menuWrapper {
+	margin-top:20px;
+  background:-moz-linear-gradient(top,#d1b38f,#e9dac8);
+  box-shadow: 0px 0px 3px 2px #d1b38f;
+  height:50px;
+}
+
+#menuContainer{
+  width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.jMenu {
+    margin: auto;
+    padding: 0;
+}
+.ongletMenu{
+	   margin-right:20px;
+}
+
+/* First level */
+.jMenu li {
+    height:30px;
+    padding:5px;
+    margin:1px;
+    margin-top:5px;
+    border-radius:5px;
+    background-color: transparent; /*#d1b38f*/
+    display: block;
+    float: left;
+}
+.jMenu li:HOVER{
+	  box-shadow: 2px 2px 3px -2px #361102;
+}
+
+.jMenu li a {
+    padding: 10px;
+    display: block;
+    background-color: transparent;
+    text-decoration:none;
+    color: #361102;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* Lower levels */
+.jMenu li ul {
+    display: none;
+    position: absolute;
+    z-index:9999;
+    padding: 0;
+    margin: 0;
+}
+
+.jMenu li ul li {
+    background-color: #d1b38f;
+    display: block;
+    padding: 0;
+}
+
+.jMenu li ul li.arrow {
+	  border-radius:5px;
+    background-color:  #e9dac8;
+    background-image: url('../images/arrow_down.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 6px;
+    padding: 0;
+    border-bottom: none;
+    padding-bottom: 10px;
+}
+
+.jMenu li ul li a {
+    font-size: 11px;
+    text-transform: none;
+    padding: 7px;
+    display: block;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.jMenu li ul li a.isParent {
+	  border-radius:5px;
+    background-color: #d1b38f;
+    background-image: url('../images/arrow_right.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.jMenu li ul li a:hover {
+    background-color: #e9dac8;
+}
+

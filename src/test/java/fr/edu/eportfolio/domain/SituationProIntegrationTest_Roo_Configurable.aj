@@ -3,11 +3,11 @@
 
 package fr.edu.eportfolio.domain;
 
-import fr.edu.eportfolio.domain.ActiviteIntegrationTest;
+import fr.edu.eportfolio.domain.SituationProIntegrationTest;
 import org.springframework.beans.factory.annotation.Configurable;
 
-privileged aspect ActiviteIntegrationTest_Roo_Configurable {
+privileged aspect SituationProIntegrationTest_Roo_Configurable {
     
-    declare @type: ActiviteIntegrationTest: @Configurable;
+    declare @type: SituationProIntegrationTest: @Configurable;
     
 }

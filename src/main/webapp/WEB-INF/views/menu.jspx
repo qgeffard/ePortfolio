@@ -17,6 +17,11 @@
         </menu:category>
         <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
             <menu:item id="i_controller__presentationindex_id" messageCode="global_generic" url="/presentation/index" z="gvq9XhGN8cX5vlUPm4EVseTjX/s="/>
+            <menu:item id="i_controller__administrationindex_id" messageCode="global_generic" url="/administration/index" z="+mTDbNp6BtKur75aCutF/60dhVs="/>
+        </menu:category>
+        <menu:category id="c_situationpro" z="XBodI6sbZfs9PBkpC7C8AxdtTbA=">
+            <menu:item id="i_situationpro_new" messageCode="global_menu_new" url="/activites?form" z="71AMeZFNzSrq9PvJZ0Wa5RmARF0="/>
+            <menu:item id="i_situationpro_list" messageCode="global_menu_list" url="/activites?page=1&amp;size=${empty param.size ? 10 : param.size}" z="OQkr7nm9GzJZ+hcZHsPMkJUsTMQ="/>
         </menu:category>
     </menu:menu>
 </div>

@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_fr_edu_eportfolio_domain_Article" modelAttribute="article" path="/articles" render="${empty dependencies}" z="imr9t6nKQmXx1tUpem6yL1onTtg=">
         <field:textarea field="nom" id="c_fr_edu_eportfolio_domain_Article_nom" required="true" z="c9fFQHSIVsgSdsD9Y3iUOxypGDg="/>
-        <field:input field="detail" id="c_fr_edu_eportfolio_domain_Article_detail" required="true" z="XCgwAyULtd7YtHBqn5bCDU5lemU="/>
+        <field:textarea field="detail" id="c_fr_edu_eportfolio_domain_Article_detail" required="true" z="lR+OuZLA5k56MkCyAbjP+kT3B34="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_fr_edu_eportfolio_domain_Article" render="${not empty dependencies}" z="/UxB7BK24uswdHYzpVW+zZ0KCQk="/>
 </div>
