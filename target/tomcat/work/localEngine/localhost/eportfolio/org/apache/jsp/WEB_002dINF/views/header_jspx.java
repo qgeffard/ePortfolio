@@ -79,7 +79,7 @@ static {
       out.write("<div id=\"menuContainer\">");
       out.write("<ul class=\"jMenu\">");
       out.write("<li class=\"ongletMenu\">");
-      out.write("<a class=\"fNiv\">");
+      out.write("<a href=\"/eportfolio/presentation/index\" class=\"fNiv\">");
       out.write("Situations Professionnelles");
       out.write("</a>");
       out.write("<ul>");
@@ -128,7 +128,7 @@ static {
       out.write("</ul>");
       out.write("</li>");
       out.write("<li class=\"ongletMenu\">");
-      out.write("<a href=\"/eportfolio/administration\" class=\"fNiv\">");
+      out.write("<a href=\"/eportfolio/administration/index\" class=\"fNiv\">");
       out.write("Administration");
       out.write("</a>");
       out.write("</li>");

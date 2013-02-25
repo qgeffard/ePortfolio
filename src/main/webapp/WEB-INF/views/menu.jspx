@@ -18,6 +18,7 @@
         <menu:category id="c_controller" z="nj8Dm3hojIyIEyPkwE1UMDIs+K8=">
             <menu:item id="i_controller__presentationindex_id" messageCode="global_generic" url="/presentation/index" z="gvq9XhGN8cX5vlUPm4EVseTjX/s="/>
             <menu:item id="i_controller__administrationindex_id" messageCode="global_generic" url="/administration/index" z="+mTDbNp6BtKur75aCutF/60dhVs="/>
+            <menu:item id="i_controller__couverturecompindex_id" messageCode="global_generic" url="/CouvertureComp/index" z="R0KnX54nSmzu04QNPhNo/ZZ5XRs="/>
         </menu:category>
         <menu:category id="c_situationpro" z="XBodI6sbZfs9PBkpC7C8AxdtTbA=">
             <menu:item id="i_situationpro_new" messageCode="global_menu_new" url="/activites?form" z="71AMeZFNzSrq9PvJZ0Wa5RmARF0="/>

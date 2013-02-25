@@ -13,7 +13,7 @@
   <div id="menuWrapper">
     <div id="menuContainer">
 		  <ul class="jMenu">
-		      <li class="ongletMenu"><a class="fNiv">Situations Professionnelles</a> <!-- Don't forget the 'fNiv' class, only on the first level link !! -->
+		      <li class="ongletMenu"><a class="fNiv" href="/eportfolio/presentation/index">Situations Professionnelles</a> <!-- Don't forget the 'fNiv' class, only on the first level link !! -->
 		          <ul>
 		              <li><a>Niveau 2</a></li>
 		              <li><a>Niveau 2</a></li>
@@ -21,14 +21,14 @@
 		              <li><a>Niveau 2</a></li>
 		          </ul>
 		      </li>
-		      <li class="ongletMenu"><a class="fNiv">Compétences Acquises</a>
+		      <li class="ongletMenu"><a class="fNiv" href="/eportfolio/couverturecomp/index">Compétences Acquises</a>
 		        <ul>
 		              <li><a>Niveau 2</a></li>
 		              <li><a>Niveau 2</a></li>
 		              <li><a>Niveau 2</a></li>
 		        </ul>
 		      </li>
-		      <li class="ongletMenu"><a class="fNiv" href="/eportfolio/administration">Administration</a>
+		      <li class="ongletMenu"><a class="fNiv" href="/eportfolio/administration/index">Administration</a>
 		      </li>
 		  </ul>
 		</div>
