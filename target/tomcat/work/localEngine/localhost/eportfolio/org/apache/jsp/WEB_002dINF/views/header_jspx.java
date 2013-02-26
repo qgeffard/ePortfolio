@@ -106,7 +106,7 @@ static {
       out.write("</ul>");
       out.write("</li>");
       out.write("<li class=\"ongletMenu\">");
-      out.write("<a class=\"fNiv\">");
+      out.write("<a href=\"/eportfolio/couverturecomp/index\" class=\"fNiv\">");
       out.write("Compétences Acquises");
       out.write("</a>");
       out.write("<ul>");
