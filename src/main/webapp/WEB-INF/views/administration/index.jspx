@@ -9,19 +9,22 @@
   <jsp:directive.page contentType="text/html;charset=UTF-8"/>
   <jsp:output omit-xml-declaration="yes"/>
   <spring:message code="label_administration_index" htmlEscape="false" var="title"/>
+  <script>
+    window.onload = function() {
+        CKEDITOR.replace( 'editor1' );
+        CKEDITOR.replace( 'editor2' );
+    };
+</script>
+  
   <div id="pageAdministration">
 	  <c:forEach items="${lesSituationPros}" var="situPro">
 	     <h1>${situPro.nom} :</h1>
 	     <p>
 	       Articles : 
-	       <table>
 		       <c:forEach items="${situPro.articles}" var="article">	         
-			         <tr>
-			          <td>${article.nom}</td>
-			          <td>${article.detail}</td>
-			         </tr>
+			          <textarea name="editor1">${article.nom}</textarea>
+			          <textarea name="editor2">${article.detail}</textarea>
 		       </c:forEach>
-	       </table>
 	     </p>
 	  </c:forEach>
   </div>
