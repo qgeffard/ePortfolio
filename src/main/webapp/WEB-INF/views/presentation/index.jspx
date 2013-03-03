@@ -5,7 +5,7 @@
   <spring:message code="label_presentation_index" htmlEscape="false" var="title"/>
 
 
-	<div id="pagePrincipale">
+	<div class="pageCorps">
 		<!-- <div class="screenshot" rel="/eportfolio/resources/images/create.png" style="cursor: pointer;" onclick="window.location.href='http://www.cssglobe.com'" title="http://www.cssglobe.com"></div>
 			Exemple d'une vignette:<br />
 			- Mission 1<br />

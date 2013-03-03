@@ -70,6 +70,13 @@ static {
         return;
       if (_jspx_meth_spring_005fmessage_005f0(_jspx_page_context))
         return;
+      out.write("<script>");
+      out.write("\n");
+      out.write("    window.onload = function() {\n");
+      out.write("        CKEDITOR.replace( '_detail_id' );\n");
+      out.write("    };\n");
+      out.write("  ");
+      out.write("</script>");
       out.write("<div id=\"banniere\">");
       out.write("<a title=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fn:escapeXml(home_label)}", java.lang.String.class, (PageContext)_jspx_page_context, _jspx_fnmap_0, false) + "\" name=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fn:escapeXml(home_label)}", java.lang.String.class, (PageContext)_jspx_page_context, _jspx_fnmap_0, false) + "\" href=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${home}", java.lang.String.class, (PageContext)_jspx_page_context, null, false) + "\">");
       out.write("<img src=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${banner}", java.lang.String.class, (PageContext)_jspx_page_context, null, false) + "\"/>");

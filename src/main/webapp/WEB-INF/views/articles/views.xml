@@ -10,7 +10,7 @@
 <definition extends="default" name="articles/create">
         <put-attribute name="body" value="/WEB-INF/views/articles/create.jspx"/>
     </definition>
-<definition extends="default" name="articles/update">
+<definition extends="public" name="articles/update">
         <put-attribute name="body" value="/WEB-INF/views/articles/update.jspx"/>
     </definition>
 </tiles-definitions>
