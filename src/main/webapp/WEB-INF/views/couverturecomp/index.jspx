@@ -11,7 +11,18 @@
 	<div class="pageCorps">
 		<TABLE>
 			<c:forEach items="${lesComps}" var="comp">
-        <tr><td>${comp.reference} - ${comp.nom}</td></tr>
+        <tr>
+	        <td>${comp.reference} - ${comp.nom}</td>
+	        <td>
+	          <c:forEach items="${lesSituations}" var="situation">
+	             <c:forEach items="${situation.competences}" var="compet">
+		            <c:if test="${compet == comp}">
+	                <p>${situation.nom}</p>
+	              </c:if>
+	             </c:forEach>
+	          </c:forEach>
+	        </td>
+        </tr>
 			</c:forEach>
 		</TABLE>
 	</div>

@@ -14,7 +14,7 @@ import org.springframework.web.context.request.WebRequest;
 import fr.edu.eportfolio.domain.Competence;
 import fr.edu.eportfolio.domain.SituationPro;
 
-@RequestMapping("/CouvertureComp/**")
+@RequestMapping("/couverturecomp/**")
 @Controller
 public class CouvertureComp {
 
@@ -27,6 +27,10 @@ public class CouvertureComp {
     	
     	List<Competence> lesCompetences = Competence.findAllCompetences();
     	model.addAttribute("lesComps",lesCompetences);
+    	
+    	List<SituationPro> lesSituations = SituationPro.findAllSituationProes();
+    	model.addAttribute("lesSituations",lesSituations);
+
         return "CouvertureComp/index";
     }
 }

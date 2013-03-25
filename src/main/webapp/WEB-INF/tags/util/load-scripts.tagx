@@ -28,11 +28,13 @@
   <spring:url value="/resources/plugin/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.js" var="jqueryUi_url" />
   <spring:url value="/resources/plugin/jquery-ui-1.9.2.custom/js/preview.js" var="previewJs_url" />
   <spring:url value="/resources/plugin/jquery-ui-1.9.2.custom/js/menu.js" var="menuJs_url" />
-  <script type="text/javascript" src="${ckeditor_url}">bid</script>
+  <spring:url value="/resources/plugin/nailthumb/jquery.nailthumb.1.1.js" var="nailThumbJs_url" />
+  <script type="text/javascript" src="${ckeditor_url}">bid</script>  
   <script type="text/javascript" src="${jquery_url}">bid</script>
   <script type="text/javascript" src="${jqueryUi_url}">bid</script>
   <script type="text/javascript" src="${previewJs_url}">bid</script>
   <script type="text/javascript" src="${menuJs_url}">bid</script>
+  <script type="text/javascript" src="${nailThumbJs_url}">bid</script>
 	
   <!-- Get the user local from the page context (it was set by Spring MVC's locale resolver) -->
   <c:set var="userLocale">
