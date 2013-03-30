@@ -31,3 +31,4 @@ web mvc controller --class ~web.Administration --preferredMapping /administratio
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2013-02-24 00:09:24
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-02-24 13:13:09
 web mvc all --package ~.web
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2013-03-13 13:58:39

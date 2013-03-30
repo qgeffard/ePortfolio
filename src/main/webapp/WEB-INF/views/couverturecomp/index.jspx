@@ -12,6 +12,7 @@
 		<TABLE>
 			<c:forEach items="${lesComps}" var="comp">
         <tr>
+          <td>${comp.id}</td>
 	        <td>${comp.reference} - ${comp.nom}</td>
 	        <td>
 	          <c:forEach items="${lesSituations}" var="situation">
