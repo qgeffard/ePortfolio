@@ -14,25 +14,16 @@
   <link rel="stylesheet" type="text/css" media="screen" href="${roo_css_url}" />
   <link rel="SHORTCUT ICON" href="${favicon}" />
  	
- 	<!-- CKEDITOR -->
+  <spring:url value="/resources/plugin/jquery-ui-1.9.2.custom/css/custom-theme/jquery-ui-1.9.2.css" var="jqueryCss_url"/>
 	<spring:url value="/resources/plugin/ckeditor/ckeditor.js" var="ckeditor_url" />
-	
- 	<!-- MENU 
-  <spring:url value="/resources/styles/menu/menu.css" var="menuCss_url" />
-  <spring:url value="/resources/styles/menu/menuie6.css" var="menuieCss_url" />
-  
-  <link rel="stylesheet" type="text/css" href="${menuCss_url}"  />
-  <link rel="stylesheet" type="text/css" href="${menuieCss_url}"  />-->
-  
   <spring:url value="/resources/plugin/jquery-ui-1.9.2.custom/js/jquery-1.8.3.js" var="jquery_url" />
   <spring:url value="/resources/plugin/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.js" var="jqueryUi_url" />
-  <spring:url value="/resources/plugin/jquery-ui-1.9.2.custom/js/preview.js" var="previewJs_url" />
   <spring:url value="/resources/plugin/jquery-ui-1.9.2.custom/js/menu.js" var="menuJs_url" />
   <spring:url value="/resources/plugin/nailthumb/jquery.nailthumb.1.1.js" var="nailThumbJs_url" />
+  <link rel="stylesheet" type="text/css" href="${jqueryCss_url}" /> 
   <script type="text/javascript" src="${ckeditor_url}">bid</script>  
   <script type="text/javascript" src="${jquery_url}">bid</script>
   <script type="text/javascript" src="${jqueryUi_url}">bid</script>
-  <script type="text/javascript" src="${previewJs_url}">bid</script>
   <script type="text/javascript" src="${menuJs_url}">bid</script>
   <script type="text/javascript" src="${nailThumbJs_url}">bid</script>
 	

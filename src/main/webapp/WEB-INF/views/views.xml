@@ -5,7 +5,10 @@
 
 <tiles-definitions>
 
-  <definition name="index" extends="default">
+	<definition extends="home" name="index">
+	</definition>
+
+  <definition name="indexOld" extends="public">
     <put-attribute name="body" value="/WEB-INF/views/index.jspx" />
   </definition>
 
