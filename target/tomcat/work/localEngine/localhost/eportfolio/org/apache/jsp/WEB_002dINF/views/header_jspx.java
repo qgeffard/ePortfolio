@@ -79,7 +79,7 @@ static {
       out.write("</script>");
       out.write("<div id=\"banniere\">");
       out.write("<a title=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fn:escapeXml(home_label)}", java.lang.String.class, (PageContext)_jspx_page_context, _jspx_fnmap_0, false) + "\" name=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${fn:escapeXml(home_label)}", java.lang.String.class, (PageContext)_jspx_page_context, _jspx_fnmap_0, false) + "\" href=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${home}", java.lang.String.class, (PageContext)_jspx_page_context, null, false) + "\">");
-      out.write("<img src=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${banner}", java.lang.String.class, (PageContext)_jspx_page_context, null, false) + "\"/>");
+      out.write("<img src=\"" + (java.lang.String) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${banner}", java.lang.String.class, (PageContext)_jspx_page_context, null, false) + "\" class=\"imgBann\"/>");
       out.write("</a>");
       out.write("</div>");
       out.write("<div id=\"menuWrapper\">");

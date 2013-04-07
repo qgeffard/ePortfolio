@@ -12,26 +12,15 @@
   </script>
   <div id="banniere">
     <a  href="${home}" name="${fn:escapeXml(home_label)}" title="${fn:escapeXml(home_label)}">
-      <img src="${banner}" />
+      <img class="imgBann" src="${banner}" />
     </a>
   </div>
   <div id="menuWrapper">
     <div id="menuContainer">
 		  <ul class="jMenu">
 		      <li class="ongletMenu"><a class="fNiv" href="/eportfolio/presentation/index">Situations Professionnelles</a> <!-- Don't forget the 'fNiv' class, only on the first level link !! -->
-<!-- 		          <ul>
-		              <li><a>Niveau 2</a></li>
-		              <li><a>Niveau 2</a></li>
-		              <li><a>Niveau 2</a></li>
-		              <li><a>Niveau 2</a></li>
-		          </ul> -->
 		      </li>
 		      <li class="ongletMenu"><a class="fNiv" href="/eportfolio/couverturecomp/index">Compétences Acquises</a>
-<!-- 		        <ul>
-		              <li><a>Niveau 2</a></li>
-		              <li><a>Niveau 2</a></li>
-		              <li><a>Niveau 2</a></li>
-		        </ul> -->
 		      </li>
 		      <li class="ongletMenu"><a class="fNiv" href="/eportfolio/administration/index">Administration</a>
 		      </li>
